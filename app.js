@@ -148,7 +148,7 @@ const puzzleView = (allPuzzle) => {
   allPuzzle.forEach((puzzle, index)=>{
     let mainDiv = document.createElement("div")
     mainDiv.classList.add('col-4')
-    mainDiv.classList.add('py-2')
+    mainDiv.classList.add('py-1')
     let puzzleNumber = document.createElement('p')
     let textnode = document.createTextNode(`Puzzle No: ${index+1}`);
     puzzleNumber.appendChild(textnode);
@@ -184,7 +184,7 @@ const resultView = (allSolution) => {
   allSolution.forEach((puzzle, index)=>{
     let mainDiv = document.createElement("div")
     mainDiv.classList.add('col-3')
-    mainDiv.classList.add('py-2')
+    mainDiv.classList.add('py-1')
     let puzzleNumber = document.createElement('p')
     let textnode = document.createTextNode(`Puzzle No: ${index+1}`);
     puzzleNumber.appendChild(textnode);
