@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sudoku</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="app.css">
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.js"></script>
+</head>
+<body>
+
+    <h1 class="text-center">SUDOKO GENERATOR</h1>
+
+    <div class="container">
+        <input class="form-control" type="text" placeholder="Number of puzzles" id="total-puzzle">
+        <select class="form-select" aria-label="Default select example">
+            <option value="0" selected></option>
+            <option value="1">9X9</option>
+        </select>
+        <button type="button" id="generate" onclick="createPuzzle()">Generate</button>
+        <button type="button" id="download" onclick="downloadPDF()">Download PDF</button>
+
+        <div id="downloadable">
+            <div id="main">
+                <div id="generated-puzzles" class="row">
+                </div>
+            </div>
+        
+            <div id="solved">
+                <div id="puzzle-result" class="row">
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
